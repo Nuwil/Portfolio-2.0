@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuwil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a354655df9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>STUDENT DEVELOPER</p>
+                <h1>Hello, I'm <span>Noel</span><br>Gaddi From Philippines</h1>
+            </div>
+        </div>
+    </div>
+<!----------------about----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>A 19-year-old from the Philippines, passionate about the gym and computer games, finding solace in music and moments of solitude, cherishing the love for both a significant other and a close-knit family.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Programming</span><br>Python, Javascript, C#, Java, CSS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Student</span><br>Learning on Process</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Elementary</span><br>Phases, Saint Vincent, Josefa Carino</li>
+                            <li><span>Highschool</span><br>Baguio City National High School</li>
+                            <li><span>Senior-Highschool</span><br>Saint Louie School Center</li>
+                            <li><span>College</span><br>University of the Cordillera</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------Services----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h2>Freelance</h2>
+                <p>I specialize in freelancing in PowerPoint design, creating visually compelling presentations, banners, and logos. My expertise focuses on essential internet functions and delivering impactful visual solutions.</p>
+                <a href="#">Learn more</a>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Online Games Buy/Sell<br>Trade/Rent</h2>
+                <p>I specialize in online transactions, exclusively trading and buying items related to specific games such as Growtopia, Roblox, and Mobile Legends. My focus ensures a deep understanding of these gaming economies and enhances the quality of transactions.</p>
+                <a href="#">Learn more</a>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-dumbbell"></i>
+                <h2>Gym coach</h2>
+                <p>I excel in guiding individuals through the fundamentals of muscle building, emphasizing proper weightlifting techniques. My focus is on cultivating strength and physique, steering clear of athletic enhancement methods.</p>
+                <a href="#">Learn more</a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------portfolio------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Freelance</h3>
+                    <p>I specialize in affordable poster, banner, logo design, and encoding services to support my daily expenses, ensuring accessibility without compromising quality. My goal is to provide valuable design and technical solutions to a diverse clientele.</p>
+                    <a href="#"><i class="fa-solid fa-screwdriver-wrench"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Gaming</h3>
+                    <p>I specialize in buying, selling, and trading in specific games only. If you have something to offer within my niche, feel free to reach out and let's explore potential transactions together.</p>
+                    <a href="#"><i class="fa-solid fa-gamepad"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Workout</h3>
+                    <p>For an affordable price, I offer my expertise as a knowledgeable and experienced gym coach to guide you through proper exercise forms. Consider me your dedicated gym buddy, providing support and ensuring you get the most out of your fitness journey. </p>
+                    <a href="#"><i class="fa-solid fa-dumbbell"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!----------------contact------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> noeljgaddi@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0931-961-0078</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/noel.gaddi.773/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/777noel.gaddi/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@noelgully"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fas fa-heart"></i> Copyright Nuwil. Made with GreatStack Guide <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
